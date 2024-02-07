@@ -14,11 +14,13 @@ body {
     border-radius: 2px;
     padding: 15px;
     gap: 1em;
+    min-height: 30em;
+    min-width: 20em;
 }
 
 .display {
     display: flex;
-    /* flex-grow: 1; */
+    flex: 1 0 20%;
     border-style: solid;
     border-color: red;
     border-radius: 2px;
@@ -26,6 +28,9 @@ body {
     gap: 1em;
 }
 .display h1 {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
     border-style: solid;
     border-color: blue;
     border-radius: 2px;
@@ -41,10 +46,10 @@ body {
 }
 .number-buttons {
     display: flex;
-    flex-grow: 2;
+    flex-direction: column;
+    flex: 2 0 100%;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: center;
     box-sizing: border-box;
     border-style: solid;
     border-color: green;
@@ -53,20 +58,27 @@ body {
     gap: 1em;
     /* height: 20em; */
 }
-.number-buttons button {
-    width: 30%;
+
+.buttons-row {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    gap: 1em;
     height: 30%;
-    
+}
+.buttons-row button {
+    flex-grow: 1;
+    min-height: 3em;
 }
 .zero-equal-buttons {
     display: flex;
-    /* flex-grow: 1; */
+    flex: 1 0 80%;
     border-style: solid;
     border-color: blue;
     border-radius: 2px;
     padding: 15px;
     gap: 1em;
-    height: 30%;
+    /* height: 30%; */
 }
 .zero-equal-buttons button {
     width: 50%;
