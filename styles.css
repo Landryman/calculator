@@ -2,25 +2,25 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 #mainContainer {
-    display: flex;
     box-sizing: border-box;
+    display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     border-style: solid;
     border-color: black;
     border-radius: 2px;
+    margin-top: 20px;
     padding: 15px;
     gap: 1em;
-    min-height: 30em;
-    min-width: 20em;
+    /* min-height: 30em;
+    min-width: 20em; */
 }
 
 .display {
     display: flex;
-    flex: 1 0 20%;
+    /* flex-grow: 1; */
     border-style: solid;
     border-color: red;
     border-radius: 2px;
@@ -35,19 +35,19 @@ body {
     border-color: blue;
     border-radius: 2px;
     text-align: end;
-    width: 60%;
+    flex-grow: 2;
     margin: 0px;
     padding: 0.5em;
 }
 .display button {
-    width: 40%;
+    flex-grow: 1;
     margin: 0px;
     padding: 0.5em;
 }
 .number-buttons {
     display: flex;
     flex-direction: column;
-    flex: 2 0 100%;
+    /* flex-grow: 3; */
     flex-wrap: wrap;
     justify-content: space-between;
     box-sizing: border-box;
@@ -56,15 +56,12 @@ body {
     border-radius: 2px;
     padding: 15px;
     gap: 1em;
-    /* height: 20em; */
 }
 
 .buttons-row {
     display: flex;
-    flex-grow: 1;
     align-items: center;
     gap: 1em;
-    height: 30%;
 }
 .buttons-row button {
     flex-grow: 1;
@@ -72,16 +69,15 @@ body {
 }
 .zero-equal-buttons {
     display: flex;
-    flex: 1 0 80%;
+    flex-grow: 2;
     border-style: solid;
     border-color: blue;
     border-radius: 2px;
     padding: 15px;
     gap: 1em;
-    /* height: 30%; */
 }
 .zero-equal-buttons button {
     width: 50%;
-    height: 5em;
+    min-height: 5em;
     
 }
