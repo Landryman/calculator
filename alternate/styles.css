@@ -1,0 +1,89 @@
+body {
+  display: block;
+}
+
+#grid-container {
+    display: grid;
+    /* gap: 1.5rem; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border-right: 10px solid rgb(224, 232, 232);
+    border-top: 10px solid rgb(224, 232, 232);
+    border-left: 10px solid rgb(78, 107, 107);
+    border-bottom: 10px solid rgb(78, 107, 107);
+    background-color: rgb(179, 195, 195);
+    margin: 100px auto auto auto;
+    padding: 2rem;
+    width: min(30%, 40rem);
+    height: 800px;
+}
+
+button {
+    background-color: white;
+    font-size: 2em;
+    border: none;
+    border-top: 5px solid lightgray;
+    border-right: 5px solid lightgray;
+    border-bottom: 5px solid lightslategray;
+    border-left: 5px solid lightslategray;
+}
+
+.grid-col-span-3 {
+    grid-column: span 3;
+
+}
+
+.grid-row-span-5 {
+    grid-row: span 5;
+}
+
+.displayandclear-btns-container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    /* background-color: lightblue; */
+    padding: 0.5rem;
+}
+
+.calc-display {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-column: span 2;
+    background-color: white;
+    padding-right: 1rem;
+    font-size: 2em;
+    border-top: 5px solid lightslategray;
+    border-right: 5px solid lightslategray;
+    border-bottom: 5px solid lightgray;
+    border-left: 5px solid lightgray;
+}
+
+.number-btns-container {
+    grid-row: 2/6;
+    display: grid;
+    gap: 1rem;
+    padding: 0.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    /* background-color: lightgreen; */
+}
+
+.number-btns-container button {
+
+}
+
+.number-btns-container :last-child {
+    grid-column: 2/3;
+}
+
+.symbol-btns-container {
+    display: grid;
+    gap: 1rem;
+    padding: 0.5rem;
+    grid-column: 4/5;
+    /* background-color: lightsalmon; */
+}
+
+.symbol-btns-container button {
+
+}
